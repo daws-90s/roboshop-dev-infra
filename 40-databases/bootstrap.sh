@@ -1,7 +1,7 @@
 #!/bin/bash
 
-component=$1
-environment=$2
+component=$1 #mongodb
+environment=$2 #dev
 dnf install ansible -y
 mkdir -p /var/log/roboshop/
 chown -R ec2-user:ec2-user /var/log/roboshop
